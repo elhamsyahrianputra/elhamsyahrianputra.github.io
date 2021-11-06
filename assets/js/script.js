@@ -67,9 +67,10 @@ kirim.addEventListener('click', function() {
     sesi = document.getElementById('sesi').value;
     catatan = document.getElementById('catatan').value
 
-    window.location = "https://api.whatsapp.com/send/?phone=6281346651603&text=-------*" + modalTitle + "*-------%0A" + "%0A*Nama%20Lengkap*%20%3A%20" + nama + "%0A*Alamat*%20%3A%20" + alamat + "%0A*Jenis%20Sampah*%20%3A%20"+ arr + "%0A*Sesi%20Pengambilan*%20%3A%20" + sesi + "%0A*Catatan*%20%3A%20" + catatan + "%0A%0A*Mohon sertakan juga gambar dari barang yang ingin anda jual";
+    window.location = "https://web.whatsapp.com/send?phone=6281346651603&text=-------*" + modalTitle + "*-------%0A" + "%0A*Nama%20Lengkap*%20%3A%20" + nama + "%0A*Alamat*%20%3A%20" + alamat + "%0A*Jenis%20Sampah*%20%3A%20"+ arr + "%0A*Sesi%20Pengambilan*%20%3A%20" + sesi + "%0A*Catatan*%20%3A%20" + catatan + "%0A%0A*Mohon sertakan juga gambar dari barang yang ingin anda jual";
 
 });
+
 
 // Alternate
 // https://api.whatsapp.com/send/?phone=6281346651603&text=-------%2AANTAR+JEMPUT%2A-------%0A%0A%2ANama+Lengkap%2A+%3A+%0A%2AAlamat%2A+%3A+%0A%2AJenis+Sampah%2A+%3A+%0A%2ASesi+Pengambilan%2A+%3A+Pilih+Sesi%0A%2ACatatan%2A+%3A+%0A%0A%2AMohon+sertakan+juga+gambar+dari+barang+yang+ingin+anda+jual&app_absent=0
