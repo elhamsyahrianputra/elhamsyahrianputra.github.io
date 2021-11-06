@@ -245,7 +245,12 @@ body {
 }
 
 .catalog-content img {
+	cursor: pointer;
 	width: 80px;
+}
+
+.catalog-content img:hover {
+	opacity: 0.6;
 }
 
 .catalog-content .bi {
@@ -253,6 +258,10 @@ body {
 	color: #079853;
 	margin-left: -25px;
 	cursor: pointer;
+}
+
+.catalog-content .bi:hover {
+	opacity: 0.5;
 }
 
 .myImage img {
