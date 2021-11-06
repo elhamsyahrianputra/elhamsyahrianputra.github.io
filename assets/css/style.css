@@ -1,0 +1,458 @@
+body {
+	background-color: #E5E5E5;
+	padding: 0px 0px 15px 0px;
+}
+
+.reset {
+	font-size: 0px;
+}
+
+
+/* Primary Color */
+.text-primary-1 {
+	color: #079853;
+}
+
+.text-primary-2 {
+	color: #fff;
+}
+
+.bg-primary-1 {
+	background-color: #079853;
+}
+
+.bg-primary-2 {
+	background-color: #E5E5E5;
+}
+
+.border-primary-1 {
+	border: solid 1px #079853;
+	border-radius: 0px 8px 8px 0px;
+}
+
+.border-primary-2 {
+	border: solid 3px #079853;
+	border-radius: 20px;
+}
+
+.border-primary-3 {}
+
+.border-primary-3:before {
+	content: '';
+	display: block;
+	border-bottom: 1px solid #000000;
+	width: 90%;
+	margin: auto;
+	margin-bottom: 10px;
+}
+
+
+/* Secondary Color */
+.bg-secondary-1 {
+	background: #D2FDC7;
+}
+
+/* Other Color */
+
+
+/* Custom Checkbox */
+.checkbox {
+	display: block;
+	position: relative;
+	padding-left: 30px;
+	margin: 0px 0px 12px 0px;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+/* hide the browser's default checkbox */
+.checkbox input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+}
+
+/* create custom checkbox */
+.check {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	height: 16px;
+	width: 16px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+/* on mouse-over, add border color */
+.checkbox:hover input~.check {
+	border: 2px solid #079853;
+}
+
+/* add background color when the checkbox is checked */
+.checkbox input:checked~.check {
+	background-color: #079853;
+	border: none;
+}
+
+/* create the checkmark and hide when not checked */
+.check:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+/* show the checkmark when checked */
+.checkbox input:checked~.check:after {
+	display: block;
+}
+
+/* checkmark style */
+.checkbox .check:after {
+	left: 6px;
+	top: 3px;
+	width: 5px;
+	height: 8px;
+	border: solid white;
+	border-width: 0px 2px 2px 0px;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+
+
+
+
+/* Heading */
+.header-top img {
+	width: 220px;
+	margin-top: 0px;
+}
+
+.jumbotron {
+	margin: 5px 0px 10px 0px;
+}
+
+.jumbotron img {
+	width: 600px;
+	border-radius: 50px;
+
+}
+
+/* End Heading */
+
+
+
+/* Body */
+
+.menu-content {
+	background-color: #079853;
+	padding: 10px 0px 30px 0px;
+	border-radius: 20px;
+}
+
+.menu-container {
+	width: 160px;
+}
+
+.menu-button {
+	border-radius: 10px;
+}
+
+.menu-button:hover,
+.menu-button:active {
+	opacity: 0.8;
+}
+
+.menu-button a {
+	text-decoration: none;
+}
+
+.menu-logo {
+	width: 90px;
+	margin: 15px 0px 0px 0px;
+}
+
+/* End Body */
+
+
+/* Contact */
+
+.contact-content {
+	margin: 40px 0px;
+	border-radius: 15px;
+	padding: 10px 30px 10px 30px;
+	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.contact-content .bi {
+	color: #079853;
+	font-size: 50px;
+}
+
+
+.contact-desktop a {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.contact-desktop a {
+	display: hidden;
+}
+
+.contact-desktop i {
+	text-decoration: none;
+}
+
+.contact-desktop .col-4:hover {
+	cursor: pointer;
+	border-radius: 15px;
+	background-color: rgba(0, 255, 0, 0.1);
+}
+
+.contact-desktop h5 {
+	color: #000000;
+}
+
+.contact-mobile {
+	display: none;
+}
+
+
+/* End Contact */
+
+
+/* Catalog */
+
+#catalog {
+	padding: 15px 0px;
+}
+
+.catalog-header img {
+	width: 220px;
+}
+
+.catalog-content {
+	border: solid 3px #079853;
+	border-radius: 20px;
+	background-color: #FFFFFF;
+	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.catalog-content img {
+	width: 80px;
+}
+
+.catalog-content .bi {
+	font-size: 30px;
+	color: #079853;
+	margin-left: -25px;
+	cursor: pointer;
+}
+
+.myImage img {
+	width: auto;
+	height: 100%;
+}
+
+/* Show Image */
+
+.galery {
+
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 100px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Modal Content */
+.galery-content {
+	background-color: transparent;
+	align-self: center;
+	position: relative;
+	margin: auto;
+	padding: 0;
+	width: 90%;
+	max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+	color: white;
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	font-size: 40px;
+	font-weight: bold;
+	z-index: 10;
+}
+
+.close:hover,
+.close:focus {
+
+	color: rgba(0, 200, 0, 0.5);
+	text-decoration: none;
+	cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+	display: none;
+}
+
+
+/*End Catalog */
+
+
+/* Modal */
+
+.modal-body {
+	margin-top: -5px;
+	padding: 0px;
+}
+
+.modal-header img {
+	width: 140px;
+}
+
+.modal-form {
+	background-color: #fff;
+	border-radius: 15px 15px 0px 0px;
+	margin-top: -15px;
+	padding: 25px 40px 40px 40px;
+}
+
+
+.modal-form .bi {
+	color: #ffffff;
+	font-size: 25px;
+}
+
+.modal-form .input-group-text {
+	border: 1px solid #079853;
+	border-radius: 8px 0px 0px 8px;
+}
+
+.modal-form .input-group p .bi {
+	font-size: 20px;
+	color: #079853;
+}
+
+#kirim-form {
+	border-radius: 20px;
+	width: 100%;
+}
+
+.modal-footer button:hover {
+	color: #ffffff;
+	background-color: #079853;
+	opacity: 0.93;
+
+}
+
+/* End Modal */
+
+
+
+/* <---------------------- Mobile Version ----------------------> */
+@media (max-width: 768px) {
+
+
+	/* Heading */
+
+	.header-top img {
+		width: 170px;
+		margin: 15px;
+
+	}
+
+
+
+	.jumbotron {
+		margin: 0px 0px 10px 0px;
+	}
+
+	.jumbotron img {
+		width: 100%;
+		border-radius: 25px;
+		box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+	}
+
+
+	/*End Heading*/
+
+
+
+	/* Menu */
+
+	.menu-button .menu-logo {
+		width: 40px;
+	}
+
+	.menu-button h4 {
+		font-weight: 400;
+		margin-top: 5px;
+		font-size: 16px;
+	}
+
+	/* Ned Menu */
+
+	/* Contact */
+
+	.contact-desktop {
+		display: none;
+	}
+
+	.contact-mobile {
+		display: block;
+	}
+
+
+	.contact-mobile i:hover {
+		cursor: pointer;
+	}
+
+	.contact-mobile .col-4:active {
+		cursor: pointer;
+		border-radius: 5px;
+		box-shadow: inset 0px 0px 0px 3px rgba(0, 255, 0, 0.3);
+	}
+
+	.contact-mobile .reset {}
+
+	/* End Contact */
+
+	/* Catalog */
+
+	.myImage img {
+		height: auto;
+		width: 100%;
+	}
+
+	/* End Catalog */
+
+
+	/* Modal */
+	.checkbox {
+		font-size: 12px;
+	}
+
+	.modal-form .bi {
+		font-size: 18px;
+	}
+
+
+	/* End Modal */
+
+}

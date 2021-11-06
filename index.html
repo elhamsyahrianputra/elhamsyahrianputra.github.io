@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+   <!-- Required meta tags -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- Bootstrap CSS -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+   <!-- Boostrap Icon -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+   <!-- CSS -->
+   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+   <!--  Title -->
+   <title>OMPUL</title>
+   <link rel="icon" href="assets/images/ompul-green-icon.png" type="image/gif" sizes="16x16">
+
+</head>
+
+<body>
+
+   <!-- Heading -->
+   <section id="heading">
+      <div class="header-top">
+         <img src="assets/images/logo/ompul-green.png">
+      </div>
+      <div class="container text-center">
+         <div class="jumbotron">
+            <img src="assets/images/jumbotron/jumbotron.png">
+         </div>
+      </div>
+   </section>
+   <!-- End Heading -->
+
+
+   <!-- Body -->
+
+   <!-- Menu -->
+   <section id="menu">
+      <div class="menu-content">
+
+         <div class="container">
+            <h1 class="text-primary-2">Layanan Kami:</h1>
+
+            <div class="row g-3 text-center">
+               <div class="col-6 col-md-3">
+                  <div class="bg-secondary-1 menu-button">
+                     <button type="button" class="btn shadow-none" data-bs-toggle="modal"
+                        data-bs-target="#registrationModal">
+                        <img src="assets/images/icon/menu1.png" class="menu-logo">
+                        <h6 class="text-primary-1">Antar Jemput</h6>
+                     </button>
+                  </div>
+               </div>
+               <div class="col-6 col-md-3">
+                  <div class="bg-secondary-1 menu-button">
+                     <button type="button" class="btn shadow-none" data-bs-toggle="modal"
+                        data-bs-target="#registrationModal">
+                        <img src="assets/images/icon/menu2.png" class="menu-logo">
+                        <h6 class="text-primary-1">Sedekah Sampah</h6>
+                     </button>
+                  </div>
+               </div>
+               <div class="col-6 col-md-3">
+                  <div class="bg-secondary-1 menu-button">
+                     <button type="button" class="btn shadow-none" data-bs-toggle="modal"
+                        data-bs-target="#registrationModal">
+                        <img src="assets/images/icon/menu3.png" class="menu-logo">
+                        <h6 class="text-primary-1">Partnership</h6>
+                     </button>
+                  </div>
+               </div>
+               <div class="col-6 col-md-3">
+                  <div class="bg-secondary-1 menu-button">
+                     <button type="button" class=" btn"><a href="#catalog">
+                           <img src="assets/images/icon/menu4.png" class="menu-logo">
+                           <h6 class="text-primary-1">Katalog</h6>
+                        </a></button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- End Menu -->
+
+   <!-- Contact -->
+   <section id="contact">
+
+      <div class="container">
+         <div class="contact-content bg-light">
+
+
+            <h1 class="text-primary-1">Hubungi Kami:</h1>
+            <div class="contact-desktop">
+               <div class="row d-flex text-center">
+                  <div class="col-4">
+                     <a class="bi bi-whatsapp" id=whatsapp-button onclick="buttonLink()">
+                        <h5>+62 851 5619 0589</h5>
+                     </a>
+                  </div>
+                  <div class="col-4">
+                     <a class="bi bi-instagram" id=instagram-button>
+                        <h5>@ompul-official</h5>
+                     </a>
+                  </div>
+                  <div class="col-4">
+                     <a class="bi bi-envelope" id=email-button onclick="buttonLink()">
+                        <h5>ompengepul@gmail.com</h5>
+                     </a>
+                  </div>
+               </div>
+            </div>
+
+            <div class="contact-mobile">
+               <div class="row d-flex text-center">
+                  <div class="col-4">
+                     <i class="bi bi-whatsapp" id="whatsapp-button-mobile" onclick="buttonLink()"><span
+                           class="reset">.</span></i>
+                  </div>
+
+                  <div class="col-4">
+                     <a class="bi bi-instagram" id="instagram-button-mobile"></a>
+                  </div>
+
+                  <div class="col-4">
+                     <i class="bi bi-envelope" id="email-button-mobile" onclick="buttonLink()"><span
+                           class="reset">.</span></i>
+                  </div>
+               </div>
+            </div>
+
+
+   </section>
+   <!-- End Contact -->
+
+   <!-- Catalog -->
+   <section id="catalog">
+      <div class="container">
+         <h1>Katalog</h1>
+         <div class="catalog-content">
+            <div class="container">
+
+               <div class="row mb-3 d-flex align-items-center">
+                  <div class="col-4">
+                     <img src="assets/images/catalog/catalog1.png" onclick="openImage();currentImage(1)">
+                  </div>
+                  <div class="col-7">
+                     <h3>Kertas</h3>
+                     <p>Harga : Rp. 1000/Kg <br> Min. 1 Kg</p>
+                  </div>
+                  <div class="col-1">
+                     <i class="bi bi-zoom-in" onclick="openImage();currentImage(1)"></i>
+                  </div>
+               </div>
+
+               <div class="row mb-3 d-flex align-items-center border-primary-3">
+                  <div class="col-4">
+                     <img src="assets/images/catalog/catalog2.png" onclick="openImage();currentImage(2)">
+                  </div>
+                  <div class="col-7">
+                     <h3>Botol Plastik</h3>
+                     <p>Harga : Rp. 1000/Kg <br> Min. 1 Kg</p>
+                  </div>
+                  <div class="col-1">
+                     <i class="bi bi-zoom-in" onclick="openImage();currentImage(2)"></i>
+                  </div>
+               </div>
+
+               <div class="row mb-3 d-flex align-items-center border-primary-3">
+                  <div class="col-4">
+                     <img src="assets/images/catalog/catalog3.png" onclick="openImage();currentImage(3)">
+                  </div>
+                  <div class="col-7">
+                     <h3>Gelas</h3>
+                     <p>Harga : Rp. 1000/Kg <br> Min. 1 Kg</p>
+                  </div>
+                  <div class="col-1">
+                     <i class="bi bi-zoom-in" onclick="openImage();currentImage(3)"></i>
+                  </div>
+               </div>
+
+               <div class="row mb-3 d-flex align-items-center border-primary-3">
+                  <div class="col-4">
+                     <img src="assets/images/catalog/catalog4.png" onclick="openImage();currentImage(4)">
+                  </div>
+                  <div class="col-7">
+                     <h3>Botol Kaca</h3>
+                     <p>Harga : Rp. 100/Botol <br> Min. 10 Botol</p>
+                  </div>
+                  <div class="col-1">
+                     <i class="bi bi-zoom-in" onclick="openImage();currentImage(4)"></i>
+                  </div>
+               </div>
+
+               <div class="row mb-3 d-flex align-items-center border-primary-3">
+                  <div class="col-4">
+                     <img src="assets/images/catalog/catalog5.png" onclick="openImage();currentImage(5)">
+                  </div>
+                  <div class="col-7">
+                     <h3>Kardus</h3>
+                     <p>Harga : Rp. 2.000/Kg <br> Min. 1 Kg</p>
+                  </div>
+                  <div class="col-1">
+                     <i class="bi bi-zoom-in" onclick="openImage();currentImage(5)"></i>
+                  </div>
+               </div>
+
+               <div class="row mb-3 d-flex align-items-center border-primary-3">
+                  <div class="col-4">
+                     <img src="assets/images/catalog/catalog6.png" onclick="openImage();currentImage(6)">
+                  </div>
+                  <div class="col-7">
+                     <h3>Piring Telur</h3>
+                     <p>Harga : Rp. 100/Biji <br> Min. 10 Biji</p>
+                  </div>
+                  <div class="col-1">
+                     <i class="bi bi-zoom-in" onclick="openImage();currentImage(6)"></i>
+                  </div>
+               </div>
+
+               <div class="row mb-3 d-flex align-items-center border-primary-3">
+                  <div class="col-4">
+                     <img src="assets/images/catalog/catalog7.jpg" onclick="openImage();currentImage(7)">
+                  </div>
+                  <div class="col-7">
+                     <h3>Kaleng Aluminium</h3>
+                     <p>Harga : Rp. 11.000/Kg <br> Min. 1 Kg</p>
+                  </div>
+                  <div class="col-1">
+                     <i class="bi bi-zoom-in" onclick="openImage();currentImage(7)"></i>
+                  </div>
+               </div>
+
+               <div class="row mb-3 d-flex align-items-center border-primary-3">
+                  <div class="col-4">
+                     <img src="assets/images/catalog/catalog8.jpg" onclick="openImage();currentImage(8)">
+                  </div>
+                  <div class="col-7">
+                     <h3>Kaleng Seng</h3>
+                     <p>Harga : Rp. 1.000/Biji <br> Min. 5 Biji</p>
+                  </div>
+                  <div class="col-1">
+                     <i class="bi bi-zoom-in" onclick="openImage();currentImage(8)"></i>
+                  </div>
+               </div>
+
+               <div class="row mb-3 d-flex align-items-center border-primary-3">
+                  <div class="col-4">
+                     <img src="assets/images/catalog/catalog9.png" onclick="openImage();currentImage(9)">
+                  </div>
+                  <div class="col-7">
+                     <h3>Refill Minyak</h3>
+                     <p>Harga : Rp. 500/Kg <br> Min. 2 Kg</p>
+                  </div>
+                  <div class="col-1">
+                     <i class="bi bi-zoom-in" onclick="openImage();currentImage(9)"></i>
+                  </div>
+               </div>
+
+               <div class="row mb-3 d-flex align-items-center border-primary-3">
+                  <div class="col-4">
+                     <img src="assets/images/catalog/catalog10.png" onclick="openImage();currentImage(10)">
+                  </div>
+                  <div class="col-7">
+                     <h3>Jerigen 5 Liter</h3>
+                     <p>Harga : Rp. 800/Biji <br> Min. 10 Biji</p>
+                  </div>
+                  <div class="col-1">
+                     <i class="bi bi-zoom-in" onclick="openImage();currentImage(10)"></i>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div id="listImage" class="galery text-center">
+            <span class="close cursor" onclick="closeImage()"><i class="bi bi-x-square-fill"></i></span>
+            <div class="galery-content">
+               <div class="myImage">
+                  <img src="assets/images/catalog/wide_catalog1.jpg">
+               </div>
+
+               <div class="myImage">
+                  <img src="assets/images/catalog/wide_catalog2.jpg">
+               </div>
+
+               <div class="myImage">
+                  <img src="assets/images/catalog/wide_catalog3.jpg">
+               </div>
+
+               <div class="myImage">
+                  <img src="assets/images/catalog/wide_catalog4.jpg">
+               </div>
+
+               <div class="myImage">
+                  <img src="assets/images/catalog/wide_catalog5.jpg">
+               </div>
+
+               <div class="myImage">
+                  <img src="assets/images/catalog/wide_catalog6.jpg">
+               </div>
+
+               <div class="myImage">
+                  <img src="assets/images/catalog/wide_catalog7.jpg">
+               </div>
+
+               <div class="myImage">
+                  <img src="assets/images/catalog/wide_catalog8.jpg">
+               </div>
+
+               <div class="myImage">
+                  <img src="assets/images/catalog/wide_catalog9.jpg">
+               </div>
+
+               <div class="myImage">
+                  <img src="assets/images/catalog/wide_catalog10.jpg">
+               </div>
+            </div>
+         </div>
+   </section>
+   <!-- End Catalog -->
+
+   <!-- End Body -->
+
+   <!-- Modal -->
+   <!-- Registartion Modal -->
+   <div class="modal fade" id="registrationModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="registrationModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+         <div class="modal-content">
+
+            <!-- Head Layout -->
+            <div class="modal-header bg-primary-1">
+               <img src="assets/images/ompul-white.jpg">
+               <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+
+               <div class="bg-primary-1 text-center p-4 modal-body-header">
+
+                  <h1 class="text-primary-2">FORMULIR</h1>
+                  <h5 class="text-primary-2">#JadiPahlawandariRumah</h5 class="text-primary-2">
+               </div>
+               <!-- End Head Layout -->
+
+               <!-- Body Layout -->
+               <div class="modal-form">
+
+                  <h3 class="mb-2">Nama:</h3>
+                  <div class="input-group mb-3">
+                     <span class="input-group-text bg-primary-1" id="basic-addon1"><i
+                           class="bi bi-person-fill"></i></span>
+                     <input id="nama" type="text" class="form-control border-primary-1" placeholder="Nama Lengkap"
+                        aria-label="Nama Lengkap" aria-describedby="basic-addon1">
+                  </div>
+
+                  <h3 class="mb-2 mt-4">Alamat:</h3>
+                  <div class="input-group mb-3">
+                     <span class="input-group-text bg-primary-1" id="basic-addon1"><i
+                           class="bi bi-house-door-fill"></i></span>
+                     <input id="alamat" type="text" class="form-control border-primary-1" placeholder="Alamat Lengkap"
+                        aria-label="Alamat Lengkap" aria-describedby="basic-addon1">
+                  </div>
+
+                  <h3 class="mb-2 mt-4">Jenis Sampah</h3>
+                  <div class="row">
+                     <div class="col">
+                        <label class="checkbox">Kertas<input type="checkbox" class="jenissampah" value="Kertas"><span
+                              class="check"></span></label>
+                        <label class="checkbox">Gelas Plastik<input type="checkbox" class="jenissampah"
+                              value="Gelas Plastik"><span class="check"></span></label>
+                        <label class="checkbox">Kardus<input type="checkbox" class="jenissampah" value="Kardus"><span
+                              class="check"></span></label>
+                        <label class="checkbox">Kaleng/Aluminium<input type="checkbox" class="jenissampah"
+                              value="Kaleng/Aluminium"><span class="check"></span></label>
+                        <label class="checkbox">Kaleng/Seng<input type="checkbox" class="jenissampah"
+                              value="Kaleng/Seng"><span class="check"></span></label>
+                     </div>
+
+
+                     <div class="col">
+                        <label class="checkbox">Botol Plastik<input type="checkbox" class="jenissampah"
+                              value="Botol Plastik"><span class="check"></span></label>
+                        <label class="checkbox">Botol Kaca<input type="checkbox" class="jenissampah"
+                              value="Botol Kaca"><span class="check"></span></label>
+                        <label class="checkbox">Piring Telur<input type="checkbox" class="jenissampah"
+                              value="Piring Telur"><span class="check"></span></label>
+                        <label class="checkbox">Refill Minyak<input type="checkbox" class="jenissampah"
+                              value="Refill Minyak"><span class="check"></span></label>
+                        <label class="checkbox">Jerigen<input type="checkbox" class="jenissampah" value="Jerigen"><span
+                              class="check"></span></label>
+                     </div>
+                  </div>
+
+
+                  <h3 class="mb-2 mt-4">Sesi Pengambilan</h3>
+                  <div class="input-group mb-3 text-center">
+                     <span class="input-group-text bg-primary-1" id="basic-addon1"><i
+                           class="bi bi-clock-fill"></i></span>
+                     <select class="form-select border-primary-1" id="sesi">
+                        <option selected>Pilih Sesi</option>
+                        <option value="Pagi">Pagi (08:00 - 10:00)</option>
+                        <option value="Sore">Sore (15:00 - 17:00)</option>
+                     </select>
+                     <p class="mt-1"><i class="bi bi-info-circle-fill"></i> Untuk Pengambilan, dilakukan rutin setiap
+                        hari <b>Jum'at</b></p class="mt-1">
+                  </div>
+
+                  <h3 class="mb-2 mt-4">Catatan</h3>
+                  <div class="input-group">
+                     <textarea class="form-control" placeholder="Catatan" id="catatan"
+                        style="height: 120px; border-color:  #079853;;"></textarea>
+                  </div>
+               </div>
+               <!-- End Body Layout -->
+
+               <!-- Footer Layout -->
+            </div>
+            <div class="modal-footer">
+               <button type="input" class="btn bg-primary-1 text-primary-2" id="kirim-form">
+                  <h4>Kirim via WhatsApp <i class="bi bi-whatsapp"></i></h4>
+               </button>
+            </div>
+            <!-- End Footer Layour -->
+
+         </div>
+      </div>
+   </div>
+   <!-- End Registration Modal -->
+
+   <!-- End Modal -->
+
+
+   <!-- JavaScript -->
+   <script type="text/javascript" src="assets/js/script.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+   </script>
+   <!-- End Javascript -->
+</body>
+
+</html>
