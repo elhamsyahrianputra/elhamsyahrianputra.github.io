@@ -67,12 +67,9 @@ kirim.addEventListener('click', function() {
     sesi = document.getElementById('sesi').value;
     catatan = document.getElementById('catatan').value
 
-    window.location = "https://wa.me/6281346651603?text=Nama%20Lengkap%20%3A%20" + nama + "%0AAlamat%20%3A%20" + alamat + "%0AJenis%20Sampah%20%3A%20"+ arr + "%0ASesi%20Pengambilan%20%3A%20" + sesi + "%0ACatatan%20%3A%20" + catatan;
+    window.location = "https://web.whatsapp.com/send?phone=6281346651603&text=-------*" + modalTitle + "*-------%0A" + "%0A*Nama%20Lengkap*%20%3A%20" + nama + "%0A*Alamat*%20%3A%20" + alamat + "%0A*Jenis%20Sampah*%20%3A%20"+ arr + "%0A*Sesi%20Pengambilan*%20%3A%20" + sesi + "%0A*Catatan*%20%3A%20" + catatan;
 
 });
-
-
-
 
 
 // Catalog
@@ -103,3 +100,4 @@ function showImage(n) {
   image[slideIndex-1].style.display = "block";
 }
 
+document.querySelector('.modal-title').innerHTML = modalTitle;
