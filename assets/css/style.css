@@ -173,7 +173,7 @@ body {
 }
 
 .menu-logo {
-	width: 90px;
+	width: 60px;
 	margin: 15px 0px 0px 0px;
 }
 
@@ -380,7 +380,7 @@ body {
 
 
 	.jumbotron {
-		margin: 0px 0px 10px 0px;
+		margin: 0px 0px 20px 0px;
 	}
 
 	.jumbotron img {
@@ -396,8 +396,8 @@ body {
 
 	/* Menu */
 
-	.menu-button .menu-logo {
-		width: 40px;
+	.menu-logo {
+		width: 50px;
 	}
 
 	.menu-button h4 {
@@ -406,7 +406,7 @@ body {
 		font-size: 16px;
 	}
 
-	/* Ned Menu */
+	/* End Menu */
 
 	/* Contact */
 
