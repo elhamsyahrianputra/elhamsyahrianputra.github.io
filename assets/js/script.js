@@ -42,7 +42,7 @@ document.getElementById("instagram-button-mobile").href="https://instagram.com/o
 document.querySelector('#email-button-mobile').addEventListener("copy", function(event) {
 event.preventDefault();
 if (event.clipboardData) {
-  event.clipboardData.setData("text/plain", "ompengempul@gmail.com");
+  event.clipboardData.setData("text/plain", "ompengepul@gmail.com");
   console.log(event.clipboardData.getData("text"))
 }
 });
