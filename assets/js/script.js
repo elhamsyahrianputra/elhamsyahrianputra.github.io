@@ -20,7 +20,7 @@ document.querySelector('#instagram-button').addEventListener("click", function()
 document.querySelector('#email-button').addEventListener("copy", function(event) {
 event.preventDefault();
 if (event.clipboardData) {
-  event.clipboardData.setData("text/plain", "ompengempul@gmail.com");
+  event.clipboardData.setData("text/plain", "ompengepul@gmail.com");
   console.log(event.clipboardData.getData("text"))
 }
 });
