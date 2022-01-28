@@ -24,14 +24,6 @@ if (event.clipboardData) {
 }
 });
 
-const test = document.querySelectorAll(".contact-desktop .col-4");
-test.forEach(function(item) {
-  item.addEventListener("mouseover", function() {
-    item.remove();
-  })
-})
-
-
   // Contact Mobile
 document.querySelector('#whatsapp-button-mobile').addEventListener("copy", function(event) {
 event.preventDefault();

@@ -225,20 +225,6 @@ body {
 	background-color: rgba(0, 255, 0, 0.1);
 }
 
-.contact-desktop .col-4:hover::before {
-	opacity: 1;
-	content: "Copy";
-	display: block;
-	position: absolute;
-	margin-left: 300px;
-	margin-top: 0px;
-	background-color: #079853;
-	color: white;
-	padding: 5px;
-	border-radius: 10px;
-	font-size: 1em;
-}
-
 .contact-desktop h5 {
 	color: #000000;
 }
