@@ -8,22 +8,28 @@ document.querySelector('#whatsapp-button').addEventListener("copy", function(eve
 event.preventDefault();
 if (event.clipboardData) {
   event.clipboardData.setData("text/plain", "+6285156190589");
-  console.log(event.clipboardData.getData("text"))
+  console.log(event.clipboardData.getData("text"));
 }
 });
 
-document.querySelector('#instagram-button').addEventListener("click", function() {
-    window.location = "https://instagram.com/ompul_official"
-});
-
+// document.querySelector('#instagram-button').addEventListener("click", function() {
+//     window.open("https://instagram.com/ompul_official");
+// });
 
 document.querySelector('#email-button').addEventListener("copy", function(event) {
 event.preventDefault();
 if (event.clipboardData) {
   event.clipboardData.setData("text/plain", "ompengepul@gmail.com");
-  console.log(event.clipboardData.getData("text"))
+  console.log(event.clipboardData.getData("text"));
 }
 });
+
+const test = document.querySelectorAll(".contact-desktop .col-4");
+test.forEach(function(item) {
+  item.addEventListener("mouseover", function() {
+    item.remove();
+  })
+})
 
 
   // Contact Mobile
@@ -31,12 +37,12 @@ document.querySelector('#whatsapp-button-mobile').addEventListener("copy", funct
 event.preventDefault();
 if (event.clipboardData) {
   event.clipboardData.setData("text/plain", "+6285156190589");
-  console.log(event.clipboardData.getData("text"))
+  console.log(event.clipboardData.getData("text"));
 }
 });
 
 
-document.getElementById("instagram-button-mobile").href="https://instagram.com/ompul_official";
+// document.getElementById("instagram-button-mobile").href="https://instagram.com/ompul_official";
     
 
 document.querySelector('#email-button-mobile').addEventListener("copy", function(event) {
@@ -102,5 +108,3 @@ function showImage(n) {
   }
   image[slideIndex-1].style.display = "block";
 }
-
-document.querySelector('.modal-title').innerHTML = modalTitle;
